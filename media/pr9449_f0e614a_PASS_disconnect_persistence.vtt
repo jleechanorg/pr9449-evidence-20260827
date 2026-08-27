@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.300
+PR #9449 exact-head provenance and commit history at f0e614a.
+
+00:00:02.300 --> 00:00:06.500
+Production diff: SSE cancellation, provider cleanup, and atomic persistence ownership.
+
+00:00:06.500 --> 00:00:08.800
+GitHub confirms the open Ready-for-Review PR points to the recorded SHA.
+
+00:00:08.800 --> 00:00:11.200
+Real Gemini and BigQuery bundle passes exact-SHA, checksum, and telemetry verification.
+
+00:00:11.200 --> 00:00:13.700
+Real local server disconnect proof passes: no done event and unchanged Firestore state across 20 observations.
+
+00:00:13.700 --> 00:00:16.500
+Server log confirms interrupted atomic persistence was skipped; pre/post SHAs match.
