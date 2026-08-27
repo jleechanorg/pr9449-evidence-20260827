@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.100
+PR #9449 local HEAD and remote PR HEAD both resolve to 04a08dd928.
+
+00:00:02.100 --> 00:00:04.200
+The real-server bundle passes 2/2 scenarios with raw LLM evidence 1/1.
+
+00:00:04.200 --> 00:00:06.300
+Canonical capture identifies the AGY-backed streaming response and exact response size.
+
+00:00:06.300 --> 00:00:08.400
+The client closes after one narrative chunk; full story and state hashes remain unchanged.
+
+00:00:08.400 --> 00:00:10.500
+The Gemini SDK deadline bundle passes within its bound with truthful unacknowledged cancellation.
+
+00:00:10.500 --> 00:00:14.500
+Both checksum sets pass; the final exact-head evidence verdict is PASS.
