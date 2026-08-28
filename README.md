@@ -22,10 +22,10 @@ chunk, no terminal `done`, and unchanged full Firestore story plus game state
 across all 20 observations. The fresh provider verifier passed every required
 claim and all bundle checksums at the same exact HEAD.
 
-- [Inline GIF](media/pr9449_5de277d3_PASS_disconnect_persistence.gif)
-- [Direct MP4](media/pr9449_5de277d3_PASS_disconnect_persistence.mp4)
-- [Asciinema cast](media/pr9449_5de277d3_PASS_disconnect_persistence.cast)
-- [VTT captions](media/pr9449_5de277d3_PASS_disconnect_persistence.vtt)
+- [Inline GIF](media/pr9449_d51c9127_PASS_disconnect_persistence.gif)
+- [Direct MP4](media/pr9449_d51c9127_PASS_disconnect_persistence.mp4)
+- [Asciinema cast](media/pr9449_d51c9127_PASS_disconnect_persistence.cast)
+- [VTT captions](media/pr9449_d51c9127_PASS_disconnect_persistence.vtt)
 
 The older `5de277d3`, `f0e614a`, and `04a08dd9` files remain archived for
 historical comparison and are not the current acceptance evidence.

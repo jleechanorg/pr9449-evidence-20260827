@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.500
+PR #9449 evidence at exact commit d51c9127f82b1a9f650aec9a833db19fc9ee57c9.
+
+00:00:01.500 --> 00:00:03.000
+Real-server disconnect evidence passes 2/2 scenarios with raw LLM evidence 1/1.
+
+00:00:03.000 --> 00:00:04.500
+The authentic phase-1 AGY response is captured after exactly one narrative chunk and before any done event.
+
+00:00:04.500 --> 00:00:06.000
+Full story and game state remain unchanged across all 20 post-disconnect observations.
+
+00:00:06.000 --> 00:00:07.500
+Direct Gemini SDK evidence proves bounded application termination and truthful persisted telemetry, not provider cleanup.
+
+00:00:07.500 --> 00:00:09.000
+All exact-head bundle checksums pass.
