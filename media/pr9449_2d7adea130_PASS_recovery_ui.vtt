@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00.000 --> 00:15.000
+BEFORE / RELOAD: exact-head campaign reload restores an interrupted response.
+
+00:15.000 --> 00:45.000
+RECOVERED: exact prose is non-authoritative; Continue and Retry are available.
+
+00:45.000 --> 01:00.500
+ACTION / AFTER: each action resolves through SSE without partial gameplay UI.
