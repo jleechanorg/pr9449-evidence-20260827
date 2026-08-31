@@ -1,31 +1,32 @@
 # PR #9449 evidence
 
 Exact-head evidence for private `worldarchitect.ai` PR #9449 at
-`d51c9127f82b1a9f650aec9a833db19fc9ee57c9`.
+`cd9948d2ef9e5bb1d92dfb18aa6622d6c512de6c`.
 
-The two complementary bundles prove distinct boundaries:
+The two current bundles prove complementary boundaries:
 
-- [Real-server disconnect bundle](artifacts/pr9449-d51c9127-disconnect-evidence.zip):
-  the production local server and SSE route use a real AGY-backed LLM response;
-  the client closes after exactly one narrative chunk; the canonical raw LLM
-  response is present; and full Firestore story plus game state remain unchanged
-  across 20 post-disconnect observations.
-- [Gemini SDK deadline bundle](artifacts/pr9449-d51c9127-provider-evidence.zip):
-  a direct real Gemini SDK stream reaches the application deadline in 0.465s,
-  within the 0.600s bound, with correlated authoritative BigQuery
-  payload/event/latency rows. It proves bounded application termination and
-  truthful cancellation telemetry. It does not claim provider cleanup or raw
-  model-output capture when `cancellation_acknowledged=false`.
+- [Real Gemini recovery bundle](artifacts/pr9449-cd9948d2-real-gemini-recovery-evidence.zip):
+  `testing_mcp` exercises the production streaming route with
+  `MOCK_SERVICES_MODE=false` and `gemini-3-flash-preview`. It passes 3/3
+  scenarios and proves that an interrupted stream stores acknowledged prose as
+  a typed draft without applying partial state, then resolves Continue and
+  Retry exactly once. Replaying either resolution returns the persisted receipt
+  without another state mutation.
+- [Browser recovery bundle](artifacts/pr9449-cd9948d2-ui-recovery-evidence.zip):
+  `testing_ui` passes 3/3 deterministic browser scenarios for reload followed by
+  Continue, reload followed by Retry, and completed-receipt refresh. It proves
+  the recovered-response UI and one-time canonical rendering. This browser
+  layer uses intercepted backend responses; the real provider and Firestore
+  claims come from the real Gemini bundle above.
 
-The fresh disconnect run passed 2/2 scenarios with one canonical narrative
-chunk, no terminal `done`, and unchanged full Firestore story plus game state
-across all 20 observations. The fresh provider verifier passed every required
-claim and all bundle checksums at the same exact HEAD.
+Both bundles contain `verification_report.json` with `/er: PASS`, exact Git
+provenance, complete checksum manifests, raw SSE/request evidence, and campaign
+snapshots. Independent verification checked 35 MCP files and 28 UI files with
+zero checksum failures.
 
-- [Inline GIF](media/pr9449_d51c9127_PASS_disconnect_persistence.gif)
-- [Direct MP4](media/pr9449_d51c9127_PASS_disconnect_persistence.mp4)
-- [Asciinema cast](media/pr9449_d51c9127_PASS_disconnect_persistence.cast)
-- [VTT captions](media/pr9449_d51c9127_PASS_disconnect_persistence.vtt)
+- [Inline UI GIF](media/pr9449_cd9948d2_PASS_recovery_ui.gif)
+- [Direct UI MP4](media/pr9449_cd9948d2_PASS_recovery_ui.mp4)
+- [VTT captions](media/pr9449_cd9948d2_PASS_recovery_ui.vtt)
 
-The older `5de277d3`, `f0e614a`, and `04a08dd9` files remain archived for
-historical comparison and are not the current acceptance evidence.
+Older evidence remains archived for historical comparison and is not the
+current acceptance evidence.
