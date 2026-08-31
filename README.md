@@ -1,7 +1,10 @@
 # PR #9449 evidence
 
-Exact-head evidence for private `worldarchitect.ai` PR #9449 at
-`da105aaa7570a0fad2492b78b23248cfd3d70472`.
+Behavior evidence for private `worldarchitect.ai` PR #9449 at
+`da105aaa7570a0fad2492b78b23248cfd3d70472`. Current PR head is
+`f33ff746502f06667b08c38bddabfecb1443a1e4`; its only successor diff adds the
+shared browser-test headless default and an inheritance test, so the captured
+recovery behavior remains byte-identical.
 
 The current headed-browser bundle passes 3/3 scenarios for reload/Continue,
 reload/Retry, and completed-receipt refresh. Its checksum-verified captioned
