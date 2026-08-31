@@ -17,8 +17,11 @@ The [exact-head real AGY/SSE recovery bundle](artifacts/pr9449_da105aaa_agy_reco
 passes 3/3 scenarios with raw provider captures, local-server SSE, and exported
 Firestore campaigns. Its manifest and provider guard pass at
 `da105aaa7570a0fad2492b78b23248cfd3d70472`. It is real AGY-provider evidence,
-not a direct Gemini SDK claim. `/wa`, a direct Gemini-SDK claim, and BQ
-readback are intentionally not made by this evidence.
+not a direct Gemini SDK claim. A separate live
+[BigQuery `llm_payloads` readback](artifacts/pr9449_da105aaa_bq_llm_payloads_readback.json)
+corroborates the two exported campaign IDs: each has three nonempty AGY request
+rows and three nonempty AGY response rows. It is test traffic (`is_test=true`),
+not production-user traffic, and does not make a direct Gemini-SDK claim.
 
 - [Inline UI GIF](media/pr9449_da105aaa_PASS_recovery_ui.gif)
 - [Direct UI MP4](media/pr9449_da105aaa_PASS_recovery_ui.mp4)
@@ -26,6 +29,7 @@ readback are intentionally not made by this evidence.
 - [Terminal GIF](media/pr9449_da105aaa_PASS_terminal.gif)
 - [Terminal MP4](media/pr9449_da105aaa_PASS_terminal.mp4)
 - [Terminal capture](artifacts/pr9449_da105aaa_terminal.cast)
+- [BigQuery request/response readback](artifacts/pr9449_da105aaa_bq_llm_payloads_readback.json)
 
 Older evidence remains archived for historical comparison and is not the
 current acceptance evidence.

@@ -1,0 +1,56 @@
+{
+  "query_source": "worldarchitecture-ai.llm_forensics.llm_payloads",
+  "queried_at_utc": "2026-08-31T19:46:00Z",
+  "evidence_git_head": "da105aaa7570a0fad2492b78b23248cfd3d70472",
+  "campaign_ids": [
+    "Oj4SgJGBkS6WrHLMkhM6",
+    "o4pWL7MNk3KsQ9yqqK7M"
+  ],
+  "query_scope": "Aggregated real-LLM AGY provider request/response corpus readback; no response prose is published.",
+  "rows": [
+    {
+      "campaign_id": "Oj4SgJGBkS6WrHLMkhM6",
+      "event_type": "agy_request",
+      "model": "Gemini 3.5 Flash (High)",
+      "row_count": 3,
+      "request_rows": 3,
+      "response_rows": 0,
+      "test_rows": 3,
+      "first_ingested_at": "2026-08-31T11:10:25.627077Z",
+      "last_ingested_at": "2026-08-31T11:11:16.331257Z"
+    },
+    {
+      "campaign_id": "Oj4SgJGBkS6WrHLMkhM6",
+      "event_type": "agy_response",
+      "model": null,
+      "row_count": 3,
+      "request_rows": 3,
+      "response_rows": 3,
+      "test_rows": 3,
+      "first_ingested_at": "2026-08-31T11:10:45.501611Z",
+      "last_ingested_at": "2026-08-31T11:11:35.320281Z"
+    },
+    {
+      "campaign_id": "o4pWL7MNk3KsQ9yqqK7M",
+      "event_type": "agy_request",
+      "model": "Gemini 3.5 Flash (High)",
+      "row_count": 3,
+      "request_rows": 3,
+      "response_rows": 0,
+      "test_rows": 3,
+      "first_ingested_at": "2026-08-31T11:12:23.748754Z",
+      "last_ingested_at": "2026-08-31T11:13:10.264356Z"
+    },
+    {
+      "campaign_id": "o4pWL7MNk3KsQ9yqqK7M",
+      "event_type": "agy_response",
+      "model": null,
+      "row_count": 3,
+      "request_rows": 3,
+      "response_rows": 3,
+      "test_rows": 3,
+      "first_ingested_at": "2026-08-31T11:12:41.477494Z",
+      "last_ingested_at": "2026-08-31T11:13:31.939228Z"
+    }
+  ]
+}
