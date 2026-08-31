@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:00.700
+Git provenance: exact PR head and origin/main merge base.
+
+00:00.700 --> 00:01.200
+Commit log and focused spell-slot normalization diff.
+
+00:01.200 --> 00:01.700
+PR #8934 is open, points to the exact pushed head, and is mergeable.
+
+00:01.700 --> 00:02.700
+Fresh checks: four focused suites, real AGY SSE scenarios, contract and LOC gates all pass.
+
+00:02.700 --> 00:03.300
+Readback: depleted level 1 wins; scalar level 9 and remaining/total level 6 render correctly.
+
+00:03.300 --> 00:03.540
+Post-run SHA equals pre-run SHA.
